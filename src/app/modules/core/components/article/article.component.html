@@ -1,0 +1,11 @@
+<div class="article-component">
+	<div *ngIf="parents && parents.length" class="item" [ngClass]="{'selected': '/' + itemLink === pageLink}">
+		<a href='{{itemLink}}'>{{item.text}}</a>
+	</div>
+
+	<div class="children" *ngIf="item && item.children && item.children.length">
+		<ng-container *ngFor="let child of item.children">
+			<app-article *ngIf="!child['hidden']" [item]="child" [parents]="parentsList"></app-article>
+		</ng-container>
+	</div>
+</div>

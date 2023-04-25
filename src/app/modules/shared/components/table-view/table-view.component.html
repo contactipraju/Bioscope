@@ -1,0 +1,27 @@
+<div class="table-view-component">
+	<div class="header clearfix" *ngIf="showHeader">
+		<div class="title pull-left">{{data.header}}</div>
+
+		<div class="search-container pull-right">
+			<input class="text-search" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="search" />
+		</div>
+	</div>
+
+	<table class="h-100 w-100">
+		<thead>
+			<tr>
+			<td *ngIf="canEdit"><b>Actions</b></td>
+			<td><b>No.</b></td>
+			<td *ngFor="let columnTitle of data.columnTitles"><b>{{columnTitle}}</b></td>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr class="weekly-row" [ngClass]="{'answered': item.status && item.status !=='new', 'unanswered': !item.status || item.status ==='new'}" *ngFor="let item of data.data | filter: searchText" (click)="viewItem(item)">
+				<td *ngIf="canEdit" (click)="selectItem($event, item)"><i class="fas fa-edit"></i></td>
+				<td>{{data.data.indexOf(item)+1}}</td>
+				<td *ngFor="let prop of data.props" [innerHTML]="item[prop]"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>

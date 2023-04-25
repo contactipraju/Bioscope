@@ -1,0 +1,51 @@
+{
+	"menu_layout": {
+		"media": [
+			{ "hidden": "true", "text": "Media", "link": "media", "children": [
+				{ "text": "On Telugu Radio", "link": "radio", "children": [
+					{ "text": "Science Hour (Tori)", "link": "sciencehour" },
+					{ "text": "Humanist Hour (Tori)", "link": "humanisthour" }
+				]},
+				{ "text": "Social Media", "link": "socialmedia", "children": [
+					{ "text": "BG - Live", "link": "bg-live" },
+					{ "text": "Humanist Cafe", "link": "humanistcafe" },
+					{ "text": "Manavavaani", "link": "manavavaani" },
+					{ "text": "Rationality", "link": "rationality" },
+					{ "text": "YouTube - Vignaanavaani", "link": "vignaanavaani", "hidden": true },
+					{ "text": "What's coming...", "link": "whatscoming", "hidden": true }
+				]},
+				{ "text": "Television", "link": "tv", "children": [
+					{ "text": "Science talk", "link": "sciencetalk" },
+					{ "text": "Debates", "link": "debates" },
+					{ "text": "Interviews", "link": "interviews" }
+				]},
+				{ "text": "Misc", "link": "misc", "children": [
+					{ "text": "Events", "link": "events" },
+					{ "text": "Speeches", "link": "speeches" }
+				]}
+			]}
+		],
+		"resources": [
+			{ "hidden": "true", "text": "Resources", "link": "resources", "children": [
+				{ "text": "Read", "link": "read", "children": [
+					{ "text": "Books", "link": "books" },
+					{ "text": "PDFs", "link": "pdfs" },
+					{ "text": "Blogs", "link": "blogs" },
+					{ "text": "Websites", "link": "websites" },
+					{ "text": "Journals", "link": "journals" }
+				]},
+				{ "text": "Reviews", "link": "reviews", "children": [
+					{ "text": "Books", "link": "books" },
+					{ "text": "Documentaries", "link": "documentaries" },
+					{ "text": "Movies", "link": "movies" },
+					{ "text": "Songs", "link": "songs" }
+				]},
+				{ "text": "Subscribe", "link": "subscribe", "children": [
+					{ "text": "NGOs", "link": "ngos" },
+					{ "text": "YouTube", "link": "youtube" },
+					{ "text": "Facebook", "link": "facebook" }
+				]}
+			]}
+		]
+	}
+}

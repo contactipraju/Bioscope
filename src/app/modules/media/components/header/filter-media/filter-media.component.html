@@ -1,0 +1,17 @@
+<div class="filter-media-component" *ngIf="list && list.length">
+	<ng-container *ngIf="(list && list | filter: searchText) as filteredList">
+		<app-filter-header
+			[list]="list" [filteredList]="filteredList"
+			[config]="config" [page]="page" [params]="params"
+			[displayOptions]="displayOptions"
+			(searchEmitter)="onSearch($event)" (displayEmitter)="onDisplay($event)"
+		></app-filter-header>
+
+		<ng-container [ngSwitch]="selectedDisplay">
+			<media-view-tile-series    *ngSwitchCase="'cards'"          [page]="page" [category]="category" [subcategory]="subcategory" [seriesList]="filteredList"></media-view-tile-series>
+			<media-view-calendar       *ngSwitchCase="'calendar'"       [events]="filteredList"></media-view-calendar>
+			<media-view-table-episodes *ngSwitchCase="'episodes-table'" [page]="page" [category]="category" [subcategory]="subcategory" [data]="filteredList"></media-view-table-episodes>
+			<media-view-table-series   *ngSwitchCase="'series-table'"   [page]="page" [category]="category" [subcategory]="subcategory" [data]="filteredList"></media-view-table-series>
+		</ng-container>
+	</ng-container>
+</div>

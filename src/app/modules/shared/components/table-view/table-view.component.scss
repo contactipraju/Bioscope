@@ -1,0 +1,58 @@
+@import "variables";
+
+.table-view-component {
+  margin-bottom: 10px;
+
+  .header {
+    height: 35px;
+
+    .title {
+      font-size: 22px;
+    }
+
+    .search-container {
+      padding: 2px;
+
+      .text-search {
+        width: 160px;
+      }
+    }
+
+    .options {
+      padding: 2px;
+
+      button {
+        border-radius: 5px;
+      }
+    }
+  }
+
+  table {
+    thead {
+      tr:first-child {
+        background-color: $DefaultColor;
+        color: #fff;
+      }
+    }
+
+    tbody {
+      tr:nth-child(odd) {
+        background-color: #dadada;
+      }
+
+      tr.weekly-row {
+        cursor: pointer;
+      }
+
+      tr.answered {
+        color: $DefaultColor;
+        font-weight: bold;
+      }
+    }
+
+    td {
+      padding: 5px 0 5px 10px;
+      font-size: 12px;
+    }
+  }
+}

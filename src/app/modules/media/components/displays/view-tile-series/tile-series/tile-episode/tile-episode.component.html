@@ -1,0 +1,27 @@
+<div class='card'>
+  <div class="card-body">
+    <div class="card-thumbnail">
+      <div class="youtubeThumbnail" *ngIf="options.showVideos && episode.ytKey">
+		<app-view-youtube-video [key]="episode.ytKey"></app-view-youtube-video>
+      </div>
+
+      <div class="flyer" *ngIf="!options.showVideos || !episode.ytKey" [ngClass]="{'has-video': episode.ytKey}">
+        <img alt="{{episode.name}}" title="{{episode.name}}" [src]="[thumbnail]" (error)="onImgError($event)" (click)="onImage($event)">
+      </div>
+    </div>
+
+    <div class="card-details">
+      <div class="card-title">
+        <span class="card-title-name">{{episode.name}}</span>
+      </div>
+
+      <div class="card-speaker">
+        <span *ngFor="let speaker of speakers; last as isLast" class="card-speaker-name">{{speaker.label}}{{isLast ? '' : ', '}}</span>
+      </div>
+
+      <div class="card-description">
+        <span class="card-description-name">{{episode.description}}</span>
+      </div>
+    </div>
+  </div>
+</div>

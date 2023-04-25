@@ -1,0 +1,38 @@
+<div class="header row">
+	<div class="filter-section col-6">
+		<div class="search-container">
+			<input class="text-search" type="text" name="search" [(ngModel)]="searchText" (ngModelChange)="onSearchChange()" autocomplete="off" placeholder="search" />
+		</div>
+
+		<div class="filtered-posts-count" *ngIf="filteredList.length && filteredList.length === list.length">
+			<span>Showing {{list?.length}} results</span>
+			<span *ngIf="page === 'media' && totalEpisodes > -1"> (Total Episodes: {{totalEpisodes}})</span>
+		</div>
+
+		<div class="filtered-posts-count" *ngIf="filteredList && filteredList.length !== list.length">
+			<span>Showing {{filteredList?.length}} of {{list?.length}}</span>
+			<button (click)="clearFilters()">Clear filters</button>
+		</div>
+
+		<ng-container *ngIf="isProduction; else localHost">
+			<button class="copy-button" (click)="copySearchLink()">Copy search link</button>
+		</ng-container>
+
+		<ng-template #localHost>
+			<ng-container *ngIf="utilityService.isDesktop && utilityService.useLocalJson">
+				<button (click)="createInFirebase()">Create in Firebase</button>
+				<button (click)="updateToFirebase()">Update</button>
+				<button (click)="deleteInFirebase()">Delete</button>
+			</ng-container>
+		</ng-template>
+	</div>
+
+	<div class="display-section col-6">
+		Show as:
+		<select id="selectShow" (change)="onDisplayChange($event.target.value)" [(ngModel)]="selectedDisplay">
+			<option *ngFor="let option of displayOptions" [value]="option.id" [selected]="option.id === selectedDisplay">
+				{{ option.label }}
+			</option>
+		</select>
+	</div>
+</div>

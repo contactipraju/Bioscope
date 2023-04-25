@@ -1,0 +1,15 @@
+<div class="media-component">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="d-none d-lg-block col-lg-2">
+				<app-lhs [page]="page" [config]="config"></app-lhs>
+			</div>
+
+			<div class="col-sm-12 col-md-12 col-lg-10">
+				<app-view-episode-details *ngIf="episodeid" [items]="events" [id]="episodeid"></app-view-episode-details>
+				<!-- <app-view-series *ngIf="seriesid && !episodeid" [items]="events" [id]="seriesid"></app-view-series> -->
+				<app-filter-media [config]="config" [page]="page" [category]="category" [subcategory]="subcategory" [items]="events" [params]="params"></app-filter-media>
+			</div>
+		</div>
+	</div>
+</div>

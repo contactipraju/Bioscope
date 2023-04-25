@@ -1,0 +1,9 @@
+<div class="tile-series" *ngIf="series && series.episodes && series.episodes.length">
+	<div class="series-name">
+		<a [href]="seriesUrl">{{series['name']}}</a>
+	</div>
+
+	<div class="card-group">
+		<app-tile-episode *ngFor="let episode of series.episodes" [episode]="episode" [series]="series"></app-tile-episode>
+	</div>
+</div>

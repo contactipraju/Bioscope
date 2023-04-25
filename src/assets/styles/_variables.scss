@@ -1,0 +1,26 @@
+$SelectedColor: #3fb498;
+$DefaultColor: #1a345b;
+$BrightColor: #e0338a;
+
+$hard-grey: #666666;
+
+@use "sass:math";
+$map-ratio: math.div(672px, 1260px) * 100%; // based on the current google static map image dimensions
+
+/* Grid Stack */
+/* $spacing-between-panels: 1px; TODO: Use lb-gridstack later */
+
+.btn {
+  border-color: $DefaultColor;
+}
+
+.btn-inverted {
+  color: #fff;
+  background-color: $DefaultColor;
+  border-color: #fff;
+}
+
+.container-fluid {
+  min-height: 560px;
+}
+
