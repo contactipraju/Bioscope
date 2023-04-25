@@ -9,8 +9,8 @@ export const environment = {
 		storageBucket: "bioscope-360.appspot.com",
 		messagingSenderId: "224168763628",
 		appId: "1:224168763628:web:219599ae94f497bfaa05c9",
-		measurementId: "G-LXNJXK40HE"
-		databaseURL: "https://bioscope-360-default-rtdb.asia-southeast1.firebasedatabase.app",
+		measurementId: "G-LXNJXK40HE",
+		databaseURL: "https://bioscope-360-default-rtdb.asia-southeast1.firebasedatabase.app"
 	},
 
 	showConsole: {
