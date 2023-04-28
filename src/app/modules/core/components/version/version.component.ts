@@ -23,6 +23,6 @@ export class VersionComponent {
 		version.date = moment(version.date).format('D-MMM-YY H:mm');
 
 		this.version = version;
-		this.tooltipText = version["major"] + version["minor"] + ', Rev: ' + version["rev"] + ', on: ' + version["date"];
+		this.tooltipText = 'V' + version["major"] + version["minor"] + ', Rev: ' + version["rev"] + ', on: ' + version["date"];
 	}
 }
