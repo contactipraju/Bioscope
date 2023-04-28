@@ -1,5 +1,6 @@
 /* Angular Modules */
 import { NgModule } from '@angular/core';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 /* Modules */
 import { SharedModule } from '@app/modules/shared/shared.module';
@@ -11,10 +12,11 @@ import { RouteService }  from './services/route.service';
 import { UtilsService }  from './services/utils.service';
 
 /* Layout Components */
-import { ArticleComponent }   from '../core/components/article/article.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { LhsComponent }    from './components/lhs/lhs.component';
-import { MenuComponent }   from './components/menu/menu.component';
+import { ArticleComponent } from './components/article/article.component';
+import { FooterComponent }  from './components/footer/footer.component';
+import { LhsComponent }     from './components/lhs/lhs.component';
+import { MenuComponent }    from './components/menu/menu.component';
+import { VersionComponent } from './components/version/version.component';
 
 const services = [
 	ConfigService,
@@ -27,12 +29,14 @@ const components = [
 	ArticleComponent,
 	FooterComponent,
 	LhsComponent,
-	MenuComponent
+	MenuComponent,
+	VersionComponent
 ];
 
 @NgModule({
 	declarations: [...components],
 	imports: [
+		MatTooltipModule,
 		SharedModule
 	],
 	exports: [...components],
