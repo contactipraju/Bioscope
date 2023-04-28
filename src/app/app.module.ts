@@ -2,12 +2,12 @@
 import { NgModule }                 from '@angular/core';
 import { RouterModule }             from '@angular/router';
 import { BrowserModule }            from '@angular/platform-browser';
-
-import { environment } from 'src/environments/environment';
+import { BrowserAnimationsModule }  from '@angular/platform-browser/animations';
 
 /* Third-party Modules */
 import { ModalModule } from 'ngx-bootstrap/modal';
 
+import { environment } from 'src/environments/environment';
 
 /* App Components */
 import { AppComponent }    from './app.component';
@@ -20,10 +20,11 @@ import { SharedModule }     from './modules/shared/shared.module';
 @NgModule({
 	declarations: [AppComponent],
 	imports: [
-		AppRoutingModule,
-		BrowserModule,
-		ModalModule.forRoot(),
 		RouterModule,
+		BrowserModule,
+		BrowserAnimationsModule,
+		ModalModule.forRoot(),
+		AppRoutingModule,
 		CoreModule,
 		SharedModule
 	],
