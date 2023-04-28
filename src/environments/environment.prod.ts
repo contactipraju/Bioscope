@@ -1,5 +1,6 @@
 export const environment = {
 	production: true,
+	version: '0.0.0',
 
 	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 	firebase: {
