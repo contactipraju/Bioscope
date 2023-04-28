@@ -7,12 +7,13 @@
     "build": "npm run version && ng build",
     "prod": "npm run version && ng build --configuration production",
     "watch": "npm run version && ng build --watch --configuration development",
-    "version": "ts-node -O '{\"module\": \"commonjs\"}' version.ts",
+    "version": "node generate-version.js",
     "test": "ng test"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.2.5",
+    "@angular/cdk": "^14.2.7",
     "@angular/common": "^15.2.5",
     "@angular/compiler": "^15.2.5",
     "@angular/core": "^15.2.5",
