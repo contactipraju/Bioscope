@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "npm run version && ng serve",
     "build": "npm run version && ng build",
-    "prod": "npm run version && && ng build --configuration production",
+    "prod": "npm run version && ng build --configuration production",
     "watch": "npm run version && ng build --watch --configuration development",
     "version": "ts-node -O '{\"module\": \"commonjs\"}' version.ts",
     "test": "ng test"
