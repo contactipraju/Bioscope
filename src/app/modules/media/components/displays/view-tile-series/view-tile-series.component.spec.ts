@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { ListViewSeriesComponent } from './list-view-series.component';
+import { ViewTileSeriesComponent } from './view-tile-series.component';
 
-describe('ListViewSeriesComponent', () => {
-  let component: ListViewSeriesComponent;
-  let fixture: ComponentFixture<ListViewSeriesComponent>;
+describe('ViewTileSeriesComponent', () => {
+  let component: ViewTileSeriesComponent;
+  let fixture: ComponentFixture<ViewTileSeriesComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ListViewSeriesComponent ]
+      declarations: [ ViewTileSeriesComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ListViewSeriesComponent);
+    fixture = TestBed.createComponent(ViewTileSeriesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

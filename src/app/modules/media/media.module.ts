@@ -39,7 +39,6 @@ import { TileEpisodeComponent }       from './components/displays/view-tile-seri
 
 import { MediaComponent } from './components/media/media.component';
 
-
 const pipes = [
 	SafePipe
 ];

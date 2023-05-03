@@ -39,7 +39,6 @@ export class EditSeriesComponent implements OnInit {
 
 	deleteEvent() {
 		console.log('EditSeriesComponent - deleteEvent: ', this.event);
-		// this._store.dispatch(new DeleteEvent(this.event));
 
 		this.modalRef.hide();
 	}
