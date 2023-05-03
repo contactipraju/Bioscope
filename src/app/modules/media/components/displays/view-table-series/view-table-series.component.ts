@@ -2,7 +2,7 @@ import { Component, OnInit, Input }   from '@angular/core';
 import { OnChanges, SimpleChange  }   from '@angular/core';
 import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 
-import { ITable }                     from '@app/modules/core/models/config.interface';
+import { ITable }                     from '@app/modules/core/models/table.interface';
 import { IEvent, ISeries }            from '@app/modules/media/models/media.interface';
 
 import { EditSeriesComponent }        from '@app/modules/media/components/edit/edit-series/edit-series.component';

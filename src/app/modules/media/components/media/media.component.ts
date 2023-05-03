@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 import { IConfig } from '@app/modules/core/models/config.interface';
 import { IEvent } from '@app/modules/media/models/media.interface';
 
-import { RouteService } from '@app/modules/core/services/route.service';
+import { RouteService }  from '@app/modules/core/services/route.service';
 import { ConfigService } from '@app/modules/core/services/config.service';
-import { EventService } from '@app/modules/media/services/event.service';
+import { EventService }  from '@app/modules/media/services/event.service';
 
 @Component({
 	selector: 'app-media',

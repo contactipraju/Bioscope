@@ -38,7 +38,6 @@ export class EditEpisodeComponent implements OnInit {
 
 	deleteEvent() {
 		console.log('EditEpisodeComponent - deleteEvent: ', this.event);
-		//this._store.dispatch(new DeleteEvent(this.event));
 
 		//Notifications.showSuccessNotification("Event deleted successfully");
 		//Notifications.showErrorNotification("Event deletion failed");

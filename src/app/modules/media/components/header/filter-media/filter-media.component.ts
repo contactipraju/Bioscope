@@ -5,6 +5,7 @@ import { IConfig } from '@app/modules/core/models/config.interface';
 import { IEvent }  from '@app/modules/media/models/media.interface';
 
 import { ConfigService } from '@app/modules/core/services/config.service';
+
 @Component({
 	selector: 'app-filter-media',
 	templateUrl: './filter-media.component.html',

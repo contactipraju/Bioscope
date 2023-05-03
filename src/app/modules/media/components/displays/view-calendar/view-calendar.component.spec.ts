@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
-import { CalendarViewComponent } from './calendar-view.component';
+import { ViewCalendarComponent } from './view-calendar.component';
 
 describe('CalendarEventsComponent', () => {
-  let component: CalendarViewComponent;
-  let fixture: ComponentFixture<CalendarViewComponent>;
+  let component: ViewCalendarComponent;
+  let fixture: ComponentFixture<ViewCalendarComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ CalendarViewComponent ]
+      declarations: [ ViewCalendarComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CalendarViewComponent);
+    fixture = TestBed.createComponent(ViewCalendarComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

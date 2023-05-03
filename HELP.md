@@ -12,6 +12,7 @@ Run on a specific port: `ng serve --open --port 4300`
 
 ## Deploying to Firebase
 To deploy from terminal using firebase-cli: firebase deploy --only hosting
+[Check deploy-using-firebase.sh for more details]
 
 To deploy to a Preview: Issue a PR into Master Branch
 Once successful, Github provides the URL of the preview build for the PR like: https://bioscope-360--pr194-210727-misc-x1kpfjtb.web.app

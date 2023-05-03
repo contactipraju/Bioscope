@@ -20,11 +20,11 @@ import { SharedModule }     from './modules/shared/shared.module';
 @NgModule({
 	declarations: [AppComponent],
 	imports: [
-		RouterModule,
+		AppRoutingModule,
 		BrowserModule,
 		BrowserAnimationsModule,
 		ModalModule.forRoot(),
-		AppRoutingModule,
+		RouterModule,
 		CoreModule,
 		SharedModule
 	],
